@@ -1,19 +1,26 @@
 .header {
-    background-color: rgba(185, 185, 185, 0.356); // پس‌زمینه قرمز برای هدر
+    background-color:rgba(145, 100, 79, 0.795);
+    color: #493737;
     display: flex;
-    width: 98%;
     align-items: center;
     justify-content: space-between;
-    margin: 10px auto;
+    margin:auto;
     position: sticky;
     top: 0;
     font-family: Comic Sans MS;
-    border-radius: 25px;
+    z-index: 1;
+    width: 95%;
+    border-radius: 10px;
   
     @media (max-width: 992px) {
       background-color: rgba(185, 185, 185, 0.356); 
     }
   }
+
+
+
+
+
   
   .navbar {
     width: 100%;
@@ -32,6 +39,8 @@
       background-color: transparent; 
     }
   }
+
+  
   
   .navbar-brand {
     margin-right: auto;
