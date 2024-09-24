@@ -108,8 +108,8 @@ a {
   border-radius: 50% 50% 2% 2%;
   width: 30%;
   height: 580px;
-  background-color: rgba(156, 97, 55, 0.3568627451);
   box-shadow: 10px 8px 15px #493737;
+  background-image: url(../../images/kk/3.jpg);
 }
 .referrer__card__text {
   position: absolute;
