@@ -8,9 +8,11 @@
     position: sticky;
     top: 0;
     font-family: Comic Sans MS;
-    z-index: 1;
+    z-index: 4;
     width: 95%;
     border-radius: 10px;
+    box-shadow: 4px 7px 22px #423237;
+
   
     @media (max-width: 992px) {
       background-color: rgba(185, 185, 185, 0.356); 
@@ -53,4 +55,9 @@
     .navbar-collapse {
       text-align: center; 
     }
+  }
+
+
+  .dropdown-menu{
+    background-color: #fff4c288 !important;
   }
