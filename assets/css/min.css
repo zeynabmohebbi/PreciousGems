@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Comic Sans MS !important;
 }
 
 a {
@@ -22,7 +23,6 @@ a {
   margin: auto;
   position: sticky;
   top: 0;
-  font-family: Comic Sans MS;
   z-index: 4;
   width: 95%;
   border-radius: 10px;
@@ -153,7 +153,6 @@ a {
   z-index: 1;
   border-radius: 10px;
   color: #9c6137;
-  font-family: Comic Sans MS;
   font-size: 15px;
   font-weight: bold;
   text-align: right;
@@ -176,4 +175,12 @@ a {
   text-align: right;
   padding: 0 1rem;
   border-radius: 9px;
+}
+
+.cont {
+  margin: 10px auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=min.css.map */
