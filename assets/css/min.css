@@ -20,7 +20,6 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-family: Comic Sans MS;
@@ -81,10 +80,12 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 30%;
+  width: 20%;
   height: 100%;
-  background-color: lightblue;
   border-radius: 20px 0 0 0;
+  background-color: lightcoral;
+  overflow: hidden;
+  filter: blur(4px);
 }
 .referrer__poster {
   position: absolute;
@@ -95,21 +96,18 @@ a {
   height: 580px;
   overflow: hidden;
   z-index: 1;
-  background-size: cover;
-}
-.referrer__poster__img {
-  width: 100%;
-  height: 100%;
+  filter: drop-shadow(10px 8px 15px #493737);
 }
 .referrer__poster__shadow {
   position: absolute;
   left: 12%;
   bottom: 80px;
   border-radius: 50% 50% 2% 2%;
+  background-color: rgba(166, 109, 53, 0.2156862745);
   width: 30%;
   height: 580px;
-  box-shadow: 10px 8px 15px #493737;
-  background-image: url(../../images/kk/3.jpg);
+  overflow: hidden;
+  z-index: 1;
 }
 .referrer__card__text {
   position: absolute;
@@ -129,7 +127,7 @@ a {
   left: 70%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(5deg);
-  background-color: #cc9966;
+  background-color: rgba(204, 153, 102, 0.8392156863);
   z-index: 1;
   border-radius: 10px;
 }
@@ -140,7 +138,7 @@ a {
   left: 70%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(10deg);
-  background-color: #ffdc97;
+  background-color: rgba(255, 220, 151, 0.7843137255);
   z-index: 1;
   border-radius: 10px;
 }
