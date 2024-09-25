@@ -310,4 +310,14 @@ a {
 }
 .footer ul {
   list-style-type: none;
+}
+
+.brand {
+  width: 95%;
+  height: 300px;
+  margin: auto;
+}
+.brand img {
+  width: 50%;
+  height: 100%;
 }/*# sourceMappingURL=min.css.map */

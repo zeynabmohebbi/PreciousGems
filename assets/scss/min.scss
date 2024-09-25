@@ -1,7 +1,10 @@
-@import "./partials/BasicActions";
-@import "./partials/header";
-@import "./partials/referrer.scss";
-@import "./partials/productcaategories";
-@import "./partials/list_product";
-@import "./partials/order";
-@import "./partials/footer";
+@import "./partials/shared/BasicActions";
+@import "./partials/shared/header";
+@import "./partials/homepage/referrer.scss";
+@import "./partials/homepage/productcaategories";
+@import "./partials/homepage/list_product";
+@import "./partials/homepage/order";
+@import "./partials/shared/footer";
+
+
+@import "./partials/product/brand";
