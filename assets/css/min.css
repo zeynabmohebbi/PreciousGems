@@ -313,11 +313,17 @@ a {
 }
 
 .brand {
-  width: 95%;
-  height: 300px;
+  width: 94%;
+  height: 450px;
   margin: auto;
+  display: flex;
+  background: linear-gradient(rgba(156, 97, 55, 0.9215686275), transparent);
+  border-radius: 2px;
+  padding: 0.25rem;
 }
 .brand img {
-  width: 50%;
+  width: 30%;
   height: 100%;
+  border-radius: 5px 50% 50% 5px;
+  box-shadow: 10px 12px 20px #493737;
 }/*# sourceMappingURL=min.css.map */

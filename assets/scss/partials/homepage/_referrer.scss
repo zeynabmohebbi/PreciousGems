@@ -1,11 +1,9 @@
 .referrer{
     width: 95%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-center(space-between);
     border-radius:5px;
-    background: linear-gradient(#f6f3ce, transparent);
+    background: linear-gradient(main-bg-color, transparent);
     margin: auto;
     position: relative;
 
@@ -30,7 +28,7 @@
         height: 580px;
         overflow: hidden;
         z-index: 1;
-        filter: drop-shadow(10px 8px 15px #493737);
+        filter: drop-shadow(10px 8px 15px $shadow-color);
 
         img{
             width: 100%;
@@ -58,9 +56,9 @@
         left: 70%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: #9c6137;
+        background-color: $card-bg-color;
         border-radius: 10px;
-        box-shadow: 12px 8px 20px #493737;
+        box-shadow: $shadow-md;
 
     }
 
@@ -105,7 +103,7 @@
         text-align: right;
         padding: 5rem 1rem;
         overflow: hidden;
-        color: #493737;
+        color: $shadow-color;
 
     }
 
@@ -124,7 +122,7 @@
         text-align: right;
         padding: 0 1rem;
         border-radius: 9px;
-        color: #493737;
+        color: $shadow-color;
 
     }
 }

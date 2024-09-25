@@ -1,24 +1,20 @@
 .wrapper{
     width: 90%;
     height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center(center);
     flex-wrap: wrap;
     padding: 3rem;
-    background-color: #9c6137;
+    background-color: $card-bg-color;
     margin:60px auto;
     border-radius: 15% 50% 10px 10px;
     position: relative;
-    filter: drop-shadow(10px 8px 20px #493737);
+    filter: drop-shadow($shadow-lg);
 
 
     &__shadow{
         width: 90%;
         height: 700px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center(center);
         flex-wrap: wrap;
         padding: 3rem;
         background-color: #cc9966d6;
@@ -40,8 +36,7 @@
         height: 470px;
         overflow: hidden;
         z-index: 1;
-        background-color: rgba(0, 255, 255, 0.237);
-        filter: drop-shadow(10px 8px 20px #5c4949);
+        filter: drop-shadow(shadow-lg-different-color);
 
 
         & img{
@@ -60,8 +55,7 @@
         height: 470px;
         overflow: hidden;
         z-index: 1;
-        background-color: rgba(0, 255, 255, 0.237);
-        filter: drop-shadow(10px 8px 20px #5c4949);
+        filter: drop-shadow(shadow-lg-different-color);
 
         & img{
             width: 100%;
@@ -76,12 +70,10 @@
         top: 180%;
         position: absolute;
         background: linear-gradient(transparent, #d3a16c, transparent);
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        @include flex-center(center);
         z-index: 1;
         padding: 1rem;
-        color: #493737;
+        color: $shadow-color;
 
     }
 

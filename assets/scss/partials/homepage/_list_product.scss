@@ -1,20 +1,16 @@
 .list-product{
     margin: 30px auto;
     width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-center(space-between);
     
 
     &__card{
         width: 15%;
         height: 200px;
         border-radius: 20px;
-        box-shadow: 10px 6px 20px #493737;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+        overflow: hidden;
+        box-shadow:$shadow-sm;
+        @include flex-center(center);
 
     img{
         width: 100%;

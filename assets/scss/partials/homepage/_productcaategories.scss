@@ -1,10 +1,8 @@
 .subject{
     margin: 10px auto;
     width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to left, #9c6137, #cc9966, #ffdc97c8);
+    @include flex-center(center);
+    background: linear-gradient(to left, card-bg-color, #cc9966, #ffdc97c8);
     color: #faf4d9;
     border-radius: 3px;
     text-shadow: (10px 8px 15px #493535);
