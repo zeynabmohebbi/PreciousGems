@@ -100,12 +100,13 @@
         background-color: #fff4c2be;
         z-index: 1;
         border-radius: 10px;
-        color: #9c6137;
         font-size: 15px;
         font-weight: bold;
         text-align: right;
         padding: 5rem 1rem;
         overflow: hidden;
+        color: #493737;
+
     }
 
     &__tage{
@@ -117,13 +118,13 @@
         transform: translate(-50%, -50%);
         background: linear-gradient(to left, #9c6137a6, transparent);
         z-index: 1;
-        color: #fff4c2;
         font-family:French Script MT;
         font-size: 35px;
         font-weight: bold;
         text-align: right;
         padding: 0 1rem;
         border-radius: 9px;
+        color: #493737;
 
     }
 }

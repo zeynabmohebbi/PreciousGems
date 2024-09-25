@@ -156,12 +156,12 @@ a {
   background-color: rgba(255, 244, 194, 0.7450980392);
   z-index: 1;
   border-radius: 10px;
-  color: #9c6137;
   font-size: 15px;
   font-weight: bold;
   text-align: right;
   padding: 5rem 1rem;
   overflow: hidden;
+  color: #493737;
 }
 .referrer__tage {
   position: absolute;
@@ -172,13 +172,13 @@ a {
   transform: translate(-50%, -50%);
   background: linear-gradient(to left, rgba(156, 97, 55, 0.6509803922), transparent);
   z-index: 1;
-  color: #fff4c2;
   font-family: French Script MT;
   font-size: 35px;
   font-weight: bold;
   text-align: right;
   padding: 0 1rem;
   border-radius: 9px;
+  color: #493737;
 }
 
 .subject {
@@ -214,4 +214,82 @@ a {
 .list-product__card img {
   width: 100%;
   height: 200px;
+}
+
+.wrapper {
+  width: 90%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background-color: #9c6137;
+  margin: 60px auto;
+  border-radius: 15% 50% 10px 10px;
+  position: relative;
+  filter: drop-shadow(10px 8px 20px #493737);
+}
+.wrapper__shadow {
+  width: 90%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background-color: rgba(204, 153, 102, 0.8392156863);
+  margin: 70px auto;
+  border-radius: 15% 50% 10px 10px;
+  position: absolute;
+  transform: rotate(-5deg);
+  z-index: 1;
+  left: 5%;
+  top: 145%;
+}
+.wrapper__poster {
+  position: absolute;
+  left: 3%;
+  top: 151%;
+  border-radius: 50% 50% 2% 2%;
+  width: 22%;
+  height: 470px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgba(0, 255, 255, 0.237);
+  filter: drop-shadow(10px 8px 20px #5c4949);
+}
+.wrapper__poster img {
+  width: 100%;
+  height: 470px;
+}
+.wrapper__poster__2 {
+  position: absolute;
+  left: 75%;
+  top: 192%;
+  border-radius: 50% 50% 2% 2%;
+  width: 22%;
+  height: 470px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgba(0, 255, 255, 0.237);
+  filter: drop-shadow(10px 8px 20px #5c4949);
+}
+.wrapper__poster__2 img {
+  width: 100%;
+  height: 470px;
+}
+.wrapper__text__box {
+  width: 36%;
+  height: 250px;
+  left: 35%;
+  top: 180%;
+  position: absolute;
+  background: linear-gradient(transparent, #d3a16c, transparent);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 1rem;
+  color: #493737;
 }/*# sourceMappingURL=min.css.map */
