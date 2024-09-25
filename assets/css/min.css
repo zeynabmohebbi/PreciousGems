@@ -292,4 +292,22 @@ a {
   z-index: 1;
   padding: 1rem;
   color: #493737;
+}
+
+.footer {
+  width: 95%;
+  height: 280px;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #683c1d;
+  color: #fff4c2;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  padding: 1rem;
+}
+.footer ul {
+  list-style-type: none;
 }/*# sourceMappingURL=min.css.map */
