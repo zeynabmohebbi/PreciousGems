@@ -2,10 +2,14 @@
     margin: 10px auto;
     width: 30%;
     @include flex-center(center);
-    background: linear-gradient(to left, card-bg-color, #cc9966, #ffdc97c8);
-    color: #faf4d9;
+    background: linear-gradient(to left, transparent, #cc9966, transparent);
+    color: #493535;
     border-radius: 3px;
     text-shadow: (10px 8px 15px #493535);
     font-family:French Script MT;
 
+    & h1{
+        font-weight: bold !important;
+
+    }
 }

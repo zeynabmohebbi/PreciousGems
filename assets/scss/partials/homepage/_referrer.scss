@@ -30,6 +30,7 @@
         z-index: 1;
         filter: drop-shadow(10px 8px 15px $shadow-color);
 
+
         img{
             width: 100%;
             height: 580px;
@@ -42,11 +43,16 @@
         left: 12%;
         bottom: 80px;
         border-radius: 50% 50% 2% 2%;
-        background-color: #a66d353e;
+        background-color: #a66d3536;
         width: 30%;
         height: 580px;
         overflow: hidden;
         z-index: 1;
+        animation: shadow-animation 4s ease-in-out infinite;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__card__text{
