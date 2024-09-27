@@ -1,21 +1,60 @@
 .brand{
     width: 94%;
-    height: 450px;
+    height: 600px;
     margin: auto;
     display: flex;
-    background: linear-gradient( #9c6137eb, transparent,);
     border-radius: 2px;
-    padding: 2rem;
+    position: relative;
+    @include flex-center(space-between);
+    padding: 3rem;
 
-    & img{
-        width: 30%;
-        height: 100%;
-        border-radius: 50% 50% 2% 2%;
-        box-shadow: 10px 12px 20px $shadow-color;
-        transition: 0.5s;
+    &__card{
+        width: 23%;
+        height: 550px;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
 
-        &:hover {
-            transform: scale(1.1);
+
+        &__image{
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            border: 2px solid $card-bg-color;
+            border-radius: 50%;
+            padding: 0.25rem;
+
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
         }
+
+        &__text{
+            width: 100%;
+            height: 370px;
+            z-index: 1;
+            background-color:$main-bg-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1.5rem 0;
+            color: $shadow-color;
+
+            & span{
+                font-weight: bold !important;
+            }
+
+            & a{
+                font-weight: bold !important;
+                padding: 0.25rem 0.5rem;
+                border: 2px solid;
+                border-radius: 10px;
+            }
+        }
+
     }
+
 }
