@@ -13,6 +13,39 @@
     opacity: 1;
   }
 }
+@keyframes moveImage1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moveImage2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveImage3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 body {
   margin: 0;
   font-family: Comic Sans MS !important;
@@ -246,6 +279,7 @@ a {
   box-shadow: 10px 6px 20px #493737;
   position: relative;
   transition: 0.5s;
+  z-index: 1;
 }
 .list-product__card:hover {
   transform: scale(1.1);
@@ -283,6 +317,8 @@ a {
   z-index: 1;
   transition: 0.5s;
   transform: translateY(100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .wrapper {
@@ -447,7 +483,7 @@ a {
 }
 
 .brand {
-  width: 94%;
+  width: 88%;
   height: 600px;
   margin: auto;
   display: flex;
@@ -495,6 +531,10 @@ a {
   padding: 0.25rem 0.5rem;
   border: 2px solid;
   border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.brand__card__text a:hover {
+  background-color: rgba(177, 166, 113, 0.7137254902);
 }
 .brand__card__2 {
   width: 40%;
@@ -510,6 +550,7 @@ a {
   position: absolute;
   bottom: 15rem;
   padding: 0.25rem;
+  animation: moveImage1 7s ease-in-out infinite;
 }
 .brand__card__2__image img {
   width: 100%;
@@ -525,6 +566,7 @@ a {
   padding: 0.25rem;
   overflow: hidden;
   left: 16rem;
+  animation: moveImage2 7s ease-in-out infinite;
 }
 .brand__card__2__image__2 img {
   width: 100%;
@@ -540,6 +582,7 @@ a {
   padding: 0.25rem;
   overflow: hidden;
   left: 20rem;
+  animation: moveImage3 7s ease-in-out infinite;
 }
 .brand__card__2__image__3 img {
   width: 100%;
@@ -555,7 +598,7 @@ a {
 }
 .brand__card__3__text {
   width: 100%;
-  height: 325px;
+  height: 335px;
   padding: 1.5rem 0.5rem;
   background-color: #fff4c2;
   color: #493737;
@@ -569,6 +612,7 @@ a {
 }
 .brand__card__3__text p {
   margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 .brand__card__3__image {
   width: 100%;
@@ -587,8 +631,8 @@ a {
 
 .productlist {
   background-color: #9c6137;
-  width: 90%;
-  border-radius: 10% 10% 5px 5px;
+  width: 78%;
+  border-radius: 10% 10% 20px 20px;
   flex-wrap: wrap;
   height: 1400px;
   margin: auto;
@@ -597,12 +641,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  overflow: hidden;
   margin-bottom: 1rem;
+  position: relative;
+}
+.productlist__shadow {
+  background-color: rgba(204, 153, 102, 0.8392156863);
+  width: 100%;
+  border-radius: 10% 10% 20px 20px;
+  height: 1400px;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
 }
 .productlist__card {
   width: 25%;
-  height: 300px;
+  height: 290px;
   padding: 2rem;
   border-radius: 30% 30% 15px 15px;
   margin-right: 5px;
@@ -611,24 +666,30 @@ a {
   border-left: 0;
   overflow: hidden;
   transition: 0.5s;
+  z-index: 1;
+  filter: drop-shadow(10px 8px 20px #493737);
   /* حالت هاور روی کارت */
 }
 .productlist__card__imege {
   width: 100%;
-  height: 256px;
+  height: 290px;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgb(255, 0, 0);
+}
+.productlist__card__imege img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(10px 8px 20px #493737);
 }
 .productlist__card__text {
   width: 100%;
-  height: 80px;
+  height: 85px;
   position: absolute;
   bottom: -2.5rem; /* خارج از مرز برای ایجاد افکت */
   left: 0;
-  background-color: #fff4c2;
-  border-radius: 0 0 15px 15px;
+  background-color: rgba(204, 153, 102, 0.4784313725);
+  border-radius: 2px 2px 15px 15px;
   transition: all 0.5s ease; /* برای انیمیشن */
   color: 10px 6px 20px #493737;
 }
@@ -637,13 +698,4 @@ a {
   border-radius: 15px; /* تغییر border-radius به 15px */
   overflow: visible; /* نمایش کامل متن */
   background-color: rgba(255, 244, 194, 0.7921568627);
-}
-.productlist__card:nth-child(3n+1) {
-  border: 3px solid #cc9966; /* بوردر کارت اول در هر ردیف */
-}
-.productlist__card:nth-child(3n+2) {
-  border: 3px solid #734128; /* بوردر کارت دوم در هر ردیف */
-}
-.productlist__card:nth-child(3n+3) {
-  border: 3px solid #391e10; /* بوردر کارت سوم در هر ردیف */
 }/*# sourceMappingURL=min.css.map */

@@ -11,6 +11,7 @@
         box-shadow:$shadow-sm;
         position: relative;
         transition: 0.5s;
+        z-index: 1;
 
         &:hover {
             transform: scale(1.1);
@@ -55,6 +56,8 @@
         z-index: 1;
         transition: 0.5s;
         transform: translateY(100%);
+        z-index: 2;
+        pointer-events: none;
     }
 
     }

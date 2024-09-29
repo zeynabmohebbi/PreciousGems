@@ -1,19 +1,33 @@
 .productlist {
     background-color: $card-bg-color;
-    width: 90%;
-    border-radius: 10% 10% 5px 5px;
+    width: 78%;
+    border-radius: 10% 10% 20px 20px;
     flex-wrap: wrap;
     height: 1400px;
     margin: auto;
     padding: 1rem;
     position: relative;
     @include flex-center(space-around);
-    overflow: hidden;
     margin-bottom: 1rem;
+    position: relative;
+
+
+    &__shadow {
+        background-color: #cc9966d6;
+        width: 100%;
+        border-radius: 10% 10% 20px 20px;
+        height: 1400px;
+        margin: auto;
+        margin-bottom: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+
+    }
 
     &__card {
         width: 25%;
-        height: 300px;
+        height: 290px;
         padding: 2rem;
         border-radius: 30% 30% 15px 15px;
         margin-right: 5px;
@@ -22,24 +36,33 @@
         border-left: 0;
         overflow: hidden;
         transition: 0.5s;
+        z-index: 1;
+        filter: drop-shadow($shadow-lg);
 
         &__imege {
             width: 100%;
-            height: 256px;
+            height: 290px;
             position: absolute;
             top: 0;
             right: 0;
-            background-color: rgb(255, 0, 0);
+            
+
+            & img{
+                width: 100%;
+                height: 100%;
+                filter: drop-shadow($shadow-lg);
+
+            }
         }
 
         &__text {
             width: 100%;
-            height: 80px;
+            height: 85px;
             position: absolute;
             bottom: -2.5rem; /* خارج از مرز برای ایجاد افکت */
             left: 0;
-            background-color: #fff4c2;
-            border-radius: 0 0 15px 15px;
+            background-color: #cc99667a;
+            border-radius: 2px 2px 15px 15px;
             transition: all 0.5s ease; /* برای انیمیشن */
             color: $shadow-sm;
         }
@@ -50,16 +73,6 @@
             border-radius: 15px; /* تغییر border-radius به 15px */
             overflow: visible; /* نمایش کامل متن */
             background-color: #fff4c2ca;
-        }
-
-        &:nth-child(3n + 1) {
-            border: 3px solid #cc9966; /* بوردر کارت اول در هر ردیف */
-        }
-        &:nth-child(3n + 2) {
-            border: 3px solid #734128; /* بوردر کارت دوم در هر ردیف */
-        }
-        &:nth-child(3n + 3) {
-            border: 3px solid #391e10; /* بوردر کارت سوم در هر ردیف */
         }
     
     }

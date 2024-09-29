@@ -13,3 +13,45 @@
         opacity: 1;
     }
 }
+
+
+@keyframes moveImage1 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes moveImage2 {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+  }
+  
+  @keyframes moveImage3 {
+    0% {
+      transform: translateY(0);
+    }
+    
+
+    50%{
+        transform: translateX(-15px);
+
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
