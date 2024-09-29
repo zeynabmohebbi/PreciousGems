@@ -483,7 +483,7 @@ a {
 }
 
 .brand {
-  width: 88%;
+  width: 85%;
   height: 600px;
   margin: auto;
   display: flex;
@@ -631,7 +631,7 @@ a {
 
 .productlist {
   background-color: #9c6137;
-  width: 78%;
+  width: 74%;
   border-radius: 10% 10% 20px 20px;
   flex-wrap: wrap;
   height: 1400px;
