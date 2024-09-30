@@ -13,3 +13,13 @@
 
     }
 }
+
+@media (max-width: 768px) {
+    .subject{
+        width: 40%;
+
+        & h1{
+            font-size: 20px;
+        }
+    }
+}

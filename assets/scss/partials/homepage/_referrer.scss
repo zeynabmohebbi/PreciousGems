@@ -1,25 +1,24 @@
-.referrer{
+.referrer {
     width: 95%;
     height: 100vh;
     @include flex-center(space-between);
-    border-radius:5px;
+    border-radius: 5px;
     background: linear-gradient(main-bg-color, transparent);
     margin: auto;
     position: relative;
 
-    &__backgrund{
+    &__backgrund {
         position: absolute;
         left: 0;
         bottom: 0;
         width: 20%;
         height: 100%;
         border-radius: 20px 0 0 0;
-        background-color: lightcoral;
         overflow: hidden;
         filter: blur(4px);
     }
 
-    &__poster{
+    &__poster {
         position: absolute;
         left: 12%;
         bottom: 80px;
@@ -31,14 +30,14 @@
         filter: drop-shadow(10px 8px 15px $shadow-color);
 
 
-        img{
+        img {
             width: 100%;
             height: 580px;
         }
-        
+
     }
 
-    &__poster__shadow{
+    &__poster__shadow {
         position: absolute;
         left: 12%;
         bottom: 80px;
@@ -55,7 +54,7 @@
         }
     }
 
-    &__card__text{
+    &__card__text {
         position: absolute;
         width: 50%;
         height: 270px;
@@ -68,7 +67,7 @@
 
     }
 
-    &__card__text__2{
+    &__card__text__2 {
         position: absolute;
         width: 50%;
         height: 270px;
@@ -81,7 +80,7 @@
 
     }
 
-    &__card__text__3{
+    &__card__text__3 {
         position: absolute;
         width: 50%;
         height: 270px;
@@ -94,7 +93,7 @@
 
     }
 
-    &__card__text__4{
+    &__card__text__4 {
         position: absolute;
         width: 40%;
         height: 250px;
@@ -113,7 +112,7 @@
 
     }
 
-    &__tage{
+    &__tage {
         position: absolute;
         width: 20%;
         height: 50px;
@@ -122,7 +121,7 @@
         transform: translate(-50%, -50%);
         background: linear-gradient(to left, #9c6137a6, transparent);
         z-index: 1;
-        font-family:French Script MT;
+        font-family: French Script MT;
         font-size: 35px;
         font-weight: bold;
         text-align: right;
@@ -133,3 +132,49 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .referrer {
+        height: 70vh;
+
+        &__poster,
+        &__poster__shadow {
+            height: 285px;
+            bottom: 201px;
+            left: 57%;
+
+            & img {
+                height: 100%;
+            }
+
+        }
+
+        &__card__text,
+        &__card__text__2,
+        &__card__text__3,
+        &__card__text__4 {
+            left: 57%;
+            top: 77%;
+            width: 69%;
+            height: 180px;
+            font-size: 10px;
+            padding: 4rem 1rem;
+
+        }
+
+        &__tage {
+            left: 82%;
+            top: 67%;
+            overflow: hidden;
+            width: 15%;
+            height: 35px;
+            font-size: 20px;
+        }
+
+        &__backgrund{
+            width: 35%;
+        }
+    }
+
+
+}

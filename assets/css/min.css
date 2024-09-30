@@ -146,7 +146,6 @@ a {
   width: 20%;
   height: 100%;
   border-radius: 20px 0 0 0;
-  background-color: lightcoral;
   overflow: hidden;
   filter: blur(4px);
 }
@@ -248,6 +247,38 @@ a {
   color: #493737;
 }
 
+@media (max-width: 768px) {
+  .referrer {
+    height: 70vh;
+  }
+  .referrer__poster, .referrer__poster__shadow {
+    height: 285px;
+    bottom: 201px;
+    left: 57%;
+  }
+  .referrer__poster img, .referrer__poster__shadow img {
+    height: 100%;
+  }
+  .referrer__card__text, .referrer__card__text__2, .referrer__card__text__3, .referrer__card__text__4 {
+    left: 57%;
+    top: 77%;
+    width: 69%;
+    height: 180px;
+    font-size: 10px;
+    padding: 4rem 1rem;
+  }
+  .referrer__tage {
+    left: 82%;
+    top: 67%;
+    overflow: hidden;
+    width: 15%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .referrer__backgrund {
+    width: 35%;
+  }
+}
 .subject {
   margin: 10px auto;
   width: 30%;
@@ -264,9 +295,23 @@ a {
   font-weight: bold !important;
 }
 
+@media (max-width: 768px) {
+  .subject {
+    width: 40%;
+  }
+  .subject h1 {
+    font-size: 20px;
+  }
+}
 .list-product {
   margin: 30px auto;
   width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-product__row {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -321,6 +366,22 @@ a {
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .list-product {
+    overflow: scroll;
+    width: 95%;
+    margin: 30px auto;
+  }
+  .list-product__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .list-product__card {
+    width: 20%;
+  }
+}
 .wrapper {
   width: 90%;
   height: 700px;
@@ -464,6 +525,41 @@ a {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    border-radius: 70% 70% 2% 2%;
+    height: 550px;
+  }
+  .wrapper__shadow {
+    border-radius: 70% 70% 2% 2%;
+    transform: rotate(0);
+    width: 90%;
+    top: 123%;
+    height: 550px;
+  }
+  .wrapper__text__box {
+    font-size: 10px;
+    height: 250px;
+    left: 27%;
+    top: 158%;
+    width: 52%;
+  }
+  .wrapper__text__box h2 {
+    font-size: 20px;
+  }
+  .wrapper__poster, .wrapper__poster__2 {
+    width: 35%;
+    height: 298px;
+  }
+  .wrapper__poster img, .wrapper__poster__2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper__poster__2 {
+    left: 62%;
+    top: 176%;
+  }
+}
 .footer {
   width: 95%;
   height: 280px;
@@ -629,6 +725,52 @@ a {
   border-radius: 0 0 50% 50%;
 }
 
+@media (max-width: 768px) {
+  .brand {
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .brand__card, .brand__card__3 {
+    width: 60%;
+  }
+  .brand__card img, .brand__card__3 img {
+    width: 100%;
+    height: 100%;
+  }
+  .brand__card__text, .brand__card__3__text {
+    font-size: 12px;
+  }
+  .brand__card__2 {
+    display: none;
+  }
+  .brand__card__3__text {
+    height: 280px;
+    bottom: 35%;
+  }
+}
+@media (max-width: 1120px) {
+  .brand {
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .brand__card, .brand__card__3 {
+    width: 60%;
+  }
+  .brand__card img, .brand__card__3 img {
+    width: 100%;
+    height: 100%;
+  }
+  .brand__card__text, .brand__card__3__text {
+    font-size: 12px;
+  }
+  .brand__card__2 {
+    display: none;
+  }
+  .brand__card__3__text {
+    height: 280px;
+    bottom: 35%;
+  }
+}
 .productlist {
   background-color: #9c6137;
   width: 74%;
@@ -700,6 +842,31 @@ a {
   background-color: rgba(255, 244, 194, 0.7921568627);
 }
 
+@media (max-width: 768px) {
+  .productlist {
+    width: 90%;
+  }
+  .productlist__card {
+    width: 35%;
+    height: 200px;
+  }
+  .productlist__card img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1089px) {
+  .productlist {
+    width: 90%;
+  }
+  .productlist__card {
+    height: 250px;
+  }
+  .productlist__card img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .about {
   background-color: #9c6137;
   width: 80%;
@@ -768,4 +935,17 @@ a {
 }
 .about__card span {
   font-size: 18px;
+}
+
+@media (max-width: 1089px) {
+  .about__card {
+    display: none;
+  }
+  .about__text {
+    width: 88%;
+    font-size: 12px;
+  }
+  .about__text span {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=min.css.map */

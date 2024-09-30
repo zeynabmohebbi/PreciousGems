@@ -1,14 +1,19 @@
-.list-product{
+.list-product {
     margin: 30px auto;
     width: 95%;
     @include flex-center(space-between);
-    
-    &__card{
+
+    &__row {
+        width: 100%;
+        @include flex-center(space-between);
+    }
+
+    &__card {
         width: 13.5%;
         height: 190px;
         border-radius: 20px;
         overflow: hidden;
-        box-shadow:$shadow-sm;
+        box-shadow: $shadow-sm;
         position: relative;
         transition: 0.5s;
         z-index: 1;
@@ -17,48 +22,67 @@
             transform: scale(1.1);
         }
 
-        &:hover &__name{
+        &:hover &__name {
             opacity: 1;
             transform: translateY(0);
 
         }
 
-        &:hover &__overly{
+        &:hover &__overly {
             opacity: 1;
             transform: translateY(0);
 
         }
 
-    &__image{
-        height: 200px;
-        position: absolute;
-        top: 0;
-    }
+        &__image {
+            height: 200px;
+            position: absolute;
+            top: 0;
+        }
 
-    &__name{
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        z-index: 2;
-        color: $main-bg-color;
-        opacity: 0;
-        transition: 0.5s;
-        transform: translateY(100%);
-    }
+        &__name {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            z-index: 2;
+            color: $main-bg-color;
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(100%);
+        }
 
-    &__overly{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        background: linear-gradient(transparent, transparent, rgba(52, 43, 32, 0.824));
-        z-index: 1;
-        transition: 0.5s;
-        transform: translateY(100%);
-        z-index: 2;
-        pointer-events: none;
-    }
+        &__overly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: linear-gradient(transparent, transparent, rgba(52, 43, 32, 0.824));
+            z-index: 1;
+            transition: 0.5s;
+            transform: translateY(100%);
+            z-index: 2;
+            pointer-events: none;
+        }
 
+    }
+}
+
+@media (max-width: 768px){
+    
+    .list-product{
+        overflow: scroll;
+        width: 95%;
+        margin: 30px auto;
+
+
+        &__row{
+            @include flex-center(space-between);
+            flex-direction: row;
+        }
+
+        &__card{
+            width: 20%;
+        }
     }
 }

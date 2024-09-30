@@ -82,3 +82,20 @@
 
     }
 }
+
+@media (max-width: 1089px){
+    .about{
+        &__card{
+            display: none;
+
+        }
+        &__text{
+            width: 88%;
+            font-size: 12px;
+
+            & span{
+                font-size: 16px;
+            }
+        }
+    }
+}
