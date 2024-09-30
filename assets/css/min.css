@@ -698,4 +698,74 @@ a {
   border-radius: 15px; /* تغییر border-radius به 15px */
   overflow: visible; /* نمایش کامل متن */
   background-color: rgba(255, 244, 194, 0.7921568627);
+}
+
+.about {
+  background-color: #9c6137;
+  width: 80%;
+  border-radius: 20px;
+  height: 400px;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.about__shadow {
+  background-color: rgba(204, 153, 102, 0.8392156863);
+  width: 100%;
+  border-radius: 20px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  padding: 2rem;
+}
+.about__shadow iframe {
+  border-radius: 20px;
+}
+.about__text {
+  background-color: rgba(255, 220, 151, 0.6941176471);
+  width: 60%;
+  border-radius: 20px;
+  height: 360px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  text-align: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+.about__text span {
+  font-weight: bold !important;
+  font-size: 20px;
+}
+.about__text p {
+  margin-top: 10px;
+}
+.about__card {
+  background-color: rgba(204, 153, 102, 0.8392156863);
+  width: 34%;
+  border-radius: 20px;
+  height: 360px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  overflow: hidden;
+}
+.about__card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.about__card span {
+  font-size: 18px;
 }/*# sourceMappingURL=min.css.map */

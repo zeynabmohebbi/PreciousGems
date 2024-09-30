@@ -1,0 +1,84 @@
+.about {
+    background-color: $card-bg-color;
+    width: 80%;
+    border-radius: 20px;
+    height: 400px;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    @include flex-center(space-around);
+    margin-bottom: 1rem;
+    position: relative;
+    margin-bottom: 3rem;
+
+
+    &__shadow {
+        background-color: #cc9966d6;
+        width: 100%;
+        border-radius: 20px;
+        height: 400px;
+        margin: auto;
+        margin-bottom: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        padding: 2rem;
+
+        & iframe{
+            border-radius: 20px;
+        }
+
+    }
+
+    &__text {
+        background-color: #ffdc97b1;;
+        width: 60%;
+        border-radius: 20px;
+        height: 360px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        text-align: center;
+        padding: 1rem;
+        overflow: hidden;
+
+        & span{
+            font-weight: bold !important;
+            font-size: 20px;
+        }
+
+        & p{
+            margin-top: 10px;
+        }
+
+    }
+
+    &__card {
+        background-color: #cc9966d6;
+        width: 34%;
+        border-radius: 20px;
+        height: 360px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        overflow: hidden;
+
+
+        
+
+        & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+
+
+        }
+
+        & span{
+            font-size: 18px;
+        }
+
+    }
+}
