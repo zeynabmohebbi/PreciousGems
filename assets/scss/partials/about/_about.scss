@@ -83,7 +83,7 @@
     }
 }
 
-@media (max-width: 1089px){
+@media (max-width: 768px){
     .about{
         &__card{
             display: none;
@@ -95,6 +95,23 @@
 
             & span{
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .about{
+        &__card{
+            display: none;
+
+        }
+        &__text{
+            width: 88%;
+            font-size: 10px;
+
+            & span{
+                font-size: 18px;
             }
         }
     }

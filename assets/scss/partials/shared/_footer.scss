@@ -16,3 +16,16 @@
         list-style-type: none;
     }
 }
+
+@media (max-width: 768px){
+    .footer{
+        font-size: 12px;
+        height: 210px;
+        padding: 1rem 0;
+
+        & h3{
+            font-size: 16px;
+        }
+    }
+}
+
